@@ -10,6 +10,7 @@ $files = new RecursiveIteratorIterator(
     RecursiveIteratorIterator::LEAVES_ONLY
 );
 
+
 foreach ($files as $name => $file){
     if (!$file->isDir()){
         $filePath = $file->getRealPath();
